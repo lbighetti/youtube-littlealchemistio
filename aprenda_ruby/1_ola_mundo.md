@@ -33,3 +33,9 @@ O resultado deve ser algo similar a:
 > ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin16]
 
 ## Ruby interativo
+
+* `irb`
+
+Para sair do terminal iterativo de ruby digite:
+
+* `exit` e pressione _enter_
