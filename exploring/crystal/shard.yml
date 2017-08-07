@@ -1,16 +1,15 @@
-name: 
+name:
 version: 0.1.0
 
 # authors:
 #   - name <email@example.com>
 
 # description: |
-#   Short description of 
+#   Short description of
 
-# dependencies:
-#   pg:
-#     github: will/crystal-pg
-#     version: "~> 0.5"
+dependencies:
+  kemal:
+    github: kemalcr/kemal
 
 # development_dependencies:
 #   webmock:
