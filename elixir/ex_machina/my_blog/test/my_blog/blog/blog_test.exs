@@ -3,25 +3,15 @@ defmodule MyBlog.BlogTest do
 
   alias MyBlog.Blog
 
+  import MyBlog.Factory
+
   describe "posts" do
     alias MyBlog.Blog.Post
 
-    @valid_attrs %{author: "some author", content: "some content", title: "some title"}
-    @update_attrs %{author: "some updated author", content: "some updated content", title: "some updated title"}
-    @invalid_attrs %{author: nil, content: nil, title: nil}
-
-    def post_fixture(attrs \\ %{}) do
-      {:ok, post} =
-        attrs
-        |> Enum.into(@valid_attrs)
-        |> Blog.create_post()
-
-      post
-    end
-
     test "get_post!/1 returns the post with given id" do
-      post = post_fixture()
-
+      post = insert(:post)
+      comments = insert_list(5, :comment, post: post)
+      IO.inspect comments
       #TODO test POST
 
     end
@@ -47,7 +37,7 @@ defmodule MyBlog.BlogTest do
       comment = comment_fixture()
 
       #TODO test comment
-      
+
     end
   end
 end
