@@ -1,8 +1,5 @@
 defmodule Game do
 
-    #1 rename into .ex
-    #2 make it into RecursiveApp module and run function
-    #2 make play function 
     def play do   
         hints = "flour, water, yeast, bakery"
         IO.puts "Hints: #{hints}"
